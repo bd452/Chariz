@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02B580AD1A9DA7400002EAA8 /* UXKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B580A21A9DA48A0002EAA8 /* UXKit.framework */; };
+		02B580AE1A9DA7400002EAA8 /* UXKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02B580A21A9DA48A0002EAA8 /* UXKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CF3E40D11A91E10A00C11DE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF3E40D01A91E10A00C11DE3 /* Images.xcassets */; };
 		CF3E40D41A91E3BB00C11DE3 /* HBCNSetupProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3E40D31A91E3BB00C11DE3 /* HBCNSetupProgressViewController.m */; };
 		CF3E40D91A92151300C11DE3 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3E40D81A92151300C11DE3 /* ScriptingBridge.framework */; };
@@ -14,7 +16,6 @@
 		CF3E40E21A92235600C11DE3 /* HBCNEmailSendingController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3E40E11A92235600C11DE3 /* HBCNEmailSendingController.m */; };
 		CF678C171A84C7490084360F /* HBCNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF678C161A84C7490084360F /* HBCNAppDelegate.m */; };
 		CF678C191A84C7490084360F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF678C181A84C7490084360F /* main.m */; };
-		CF678C371A84C83B0084360F /* UXKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF678C361A84C83B0084360F /* UXKit.framework */; };
 		CF678C3B1A84D49F0084360F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF678C3A1A84D49F0084360F /* Cocoa.framework */; };
 		CF678C3D1A84D4A40084360F /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF678C3C1A84D4A40084360F /* AppKit.framework */; };
 		CF678C3F1A84D4A80084360F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF678C3E1A84D4A80084360F /* CoreGraphics.framework */; };
@@ -45,7 +46,22 @@
 		};
 /* End PBXBuildRule section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		02B580AF1A9DA7400002EAA8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				02B580AE1A9DA7400002EAA8 /* UXKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		02B580A21A9DA48A0002EAA8 /* UXKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UXKit.framework; sourceTree = "<group>"; };
 		80B03565FDF1BD7C3C7AD82E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C4A455C5F5A95B37B57ECE19 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CF3E40D01A91E10A00C11DE3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -61,7 +77,6 @@
 		CF678C151A84C7490084360F /* HBCNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBCNAppDelegate.h; sourceTree = "<group>"; };
 		CF678C161A84C7490084360F /* HBCNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBCNAppDelegate.m; sourceTree = "<group>"; };
 		CF678C181A84C7490084360F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CF678C361A84C83B0084360F /* UXKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UXKit.framework; path = /System/Library/PrivateFrameworks/PhotoLibraryPrivate.framework/Versions/A/Frameworks/UXKit.framework; sourceTree = "<absolute>"; };
 		CF678C3A1A84D49F0084360F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CF678C3C1A84D4A40084360F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		CF678C3E1A84D4A80084360F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -92,11 +107,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02B580AD1A9DA7400002EAA8 /* UXKit.framework in Frameworks */,
 				CF678C3D1A84D4A40084360F /* AppKit.framework in Frameworks */,
 				CF678C3B1A84D49F0084360F /* Cocoa.framework in Frameworks */,
 				CF678C3F1A84D4A80084360F /* CoreGraphics.framework in Frameworks */,
 				CF3E40D91A92151300C11DE3 /* ScriptingBridge.framework in Frameworks */,
-				CF678C371A84C83B0084360F /* UXKit.framework in Frameworks */,
 				CF678C4C1A84E8670084360F /* WebKit.framework in Frameworks */,
 				F849E64487BD828BAACC4C52 /* libPods.a in Frameworks */,
 			);
@@ -187,12 +202,12 @@
 		CF678C381A84C8450084360F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				02B580A21A9DA48A0002EAA8 /* UXKit.framework */,
 				CF678C3C1A84D4A40084360F /* AppKit.framework */,
 				CF678C3A1A84D49F0084360F /* Cocoa.framework */,
 				CF678C3E1A84D4A80084360F /* CoreGraphics.framework */,
 				CF3E40DE1A92172700C11DE3 /* Mail.app */,
 				CF3E40D81A92151300C11DE3 /* ScriptingBridge.framework */,
-				CF678C361A84C83B0084360F /* UXKit.framework */,
 				CF678C4B1A84E8660084360F /* WebKit.framework */,
 				F9E063264AAB01B6E98D54B2 /* libPods.a */,
 			);
@@ -324,6 +339,7 @@
 				CF678C0D1A84C7490084360F /* Frameworks */,
 				CF678C0E1A84C7490084360F /* Resources */,
 				555A965E1B0767FD3BE96982 /* Copy Pods Resources */,
+				02B580AF1A9DA7400002EAA8 /* Embed Frameworks */,
 			);
 			buildRules = (
 				CF3E40DD1A92167900C11DE3 /* PBXBuildRule */,
@@ -522,6 +538,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks/PhotoLibraryPrivate.framework/Versions/A/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "Cynthia/Cynthia-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -544,6 +561,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks/PhotoLibraryPrivate.framework/Versions/A/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "Cynthia/Cynthia-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
